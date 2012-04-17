@@ -1,18 +1,8 @@
 FacebookContentest::Application.routes.draw do
   
-  get "users/index"
 
-  get "users/new"
-
-  get "users/create"
-
-  get "users/show"
+  resources :users
   
-  get "users/list"
-
-  resources:user do
-
-  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
