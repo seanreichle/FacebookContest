@@ -26,6 +26,7 @@ group :assgets do
 end
 
 gem 'jquery-rails'
+gem 'carrierwave'
 gem 'rmagick'
 gem 'simple_form'
 gem "fog", "~> 1.3.1"
