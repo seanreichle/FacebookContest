@@ -34,8 +34,8 @@ body {
 	text-align: left;
 	width: 330px;
 	position:relative;
-	left: 480px;
-	top: -475px;
+	left: 460px;
+	top: -345px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;	
@@ -44,9 +44,13 @@ body {
 #description {
 	font-family: lato, helvetica, sans-serif;
 	height: 300px;
-	width: 350px;
+	width: 400px;
 	padding: 20px;
-	padding-top: 300px; 	
+	padding-top: 290px; 
+	p {
+		padding:0 0 5px;
+		margin:0;
+	}	
 }
 label {display:none;}
 input {
@@ -113,10 +117,10 @@ textarea {
 
 a {
 	text-decoration: none;
-	color: #fdad02;
+	color: #9e2301;
 }
 
 a:hover {
-	color: #024ffd;
+	color: #701a02;
 }
 @import "buttons";
