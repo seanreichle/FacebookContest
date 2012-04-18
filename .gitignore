@@ -14,4 +14,3 @@
 /log/*.log
 /tmp
 .sass-cache
-/config/email.yml
