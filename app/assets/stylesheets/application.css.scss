@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body {
+	font-family: lato, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 810px;
+	margin: 0 auto;
+	height: 700px;
+	background: #ffffff;
+	background-image:url("nvc-tab-contest-bckgrd.jpg");
+	background-repeat: no-repeat;
+}
+
+
+#form {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 13px;
+	color: #000;
+	text-align: left;
+	width: 330px;
+	position:relative;
+	left: 480px;
+	top: -475px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+
+#description {
+	font-family: lato, helvetica, sans-serif;
+	height: 300px;
+	width: 350px;
+	padding: 20px;
+	padding-top: 300px; 	
+}
+label {display:none;}
+input {
+	height: 35px;
+	width: 280px;
+	margin: 3px;
+	padding:2px 8px;
+	font-size:15px;
+	font-family: lato, helvetica, sans-serif;
+	color: #797575;
+	border:none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+input.placeholder {
+	font-size:11px;
+}
+
+textarea {
+	height: 100px;
+	width: 280px;
+	margin: 3px;
+	padding:4px 8px;
+	border:none;
+	font-family: lato, helvetica, sans-serif;
+	font-size:15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#button {
+	margin-left: 110px;
+	width: 100px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.btn {
+	width: 100px;
+	color: #ae2c01;
+	margin:0 0 0 100px;
+	color:#ddd !important;
+	
+}
+
+a {
+	text-decoration: none;
+	color: #fdad02;
+}
+
+a:hover {
+	color: #024ffd;
+}
+@import "buttons";

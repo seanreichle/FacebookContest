@@ -4,18 +4,12 @@
 	</div>
 	<div id="form">
 		<%= simple_form_for @user do |f| %>
-		  <%= f.input :last %>
-		  <%= f.input :first %>
-		  <%= f.input :email %>
-		  <%= f.input :comment %>
+		  <%= f.input :first, :placeholder => "First Name"%>
+		  <%= f.input :last, :placeholder => "Last Name" %>
+		  <%= f.input :email, :placeholder => "Email Address" %>
+		  <%= f.input :zip_code, :placeholder => "Your Zipcode" %>
+		  <%= f.input :comment, :placeholder => "Comment" %>
+		  <%= f.button :submit, 'Send!', :class => "button positive" %>
 		<% end %>     
-			<input type="hidden" name="referer" value="fb-tab"/>
-			<input type="text" value="First Name" title="First Name" name="FirstName" id="firstname" class="input" onfocus="value=''"/><br />
-			<input type="text" value="Last Name" title="Last Name" name="LastName" id="lastname"  class="input" onfocus="value=''"/><br />
-			<input type="text" value="Your Email" title="Email" name="Email" id="email" class="input" onfocus="value=''"/><br />
-			<textarea type="essay" value="words" name="Lets hear it" id="words" row="15" col="10"></textarea>
-			<label for="submit-button">Upload Your Picture here</label>
-			<input type="submit" value="picture" id="submit-button">
-			<input type="image" src="/Users/Mike/Desktop/images/button.png" alt="submit" name="submit"  id="button" align="center"/>
 	</div>
 </div>
