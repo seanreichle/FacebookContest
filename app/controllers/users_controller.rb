@@ -10,7 +10,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if @project.save
+    if @user.save
+      UserMailer.send_contest_mail(@user).deliver
       redirect_to @user, notice: 'User was successfully created.' 
     else
       render action: "new"

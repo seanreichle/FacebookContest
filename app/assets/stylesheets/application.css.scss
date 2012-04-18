@@ -61,6 +61,7 @@ input {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	outline: none;
 }
 input.placeholder {
 	font-size:11px;
@@ -77,6 +78,7 @@ textarea {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	outline: none;
 }
 
 #button {
@@ -93,6 +95,20 @@ textarea {
 	margin:0 0 0 100px;
 	color:#ddd !important;
 	
+}
+
+.input.field_with_errors,{
+	position:relative;
+	input, textarea{
+		border:1px solid #f00;
+		background:#fdf1f4}
+	span.error {
+		position: absolute;
+		right: 40px;
+		top: 10px;
+		text-align: right;
+		color:#f00;
+	}
 }
 
 a {

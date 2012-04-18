@@ -3,7 +3,7 @@
 		<p>Are you tired of dealing with blurred vision? Enter to win a free <a href="http://www.nationwidevision.com/lasik/" target="_blank">LASIK surgery</a> ($2,000 value) by simply telling <a href="http://www.nationwidevision.com/" target="_blank">us</a> in 50 words or less why you should win a LASIK surgery over all your fellow compatriots. For an extra bonus point, feel free to submit your best cat photo with your entry. That’s right, we want a photo of your fluffiest, furriest little cat friend. Who knows? Your photo may just make it on our Facebook page….</p>
 	</div>
 	<div id="form">
-		<%= simple_form_for @user do |f| %>
+		<%= simple_form_for @user, :remote => true do |f| %>
 		  <%= f.input :first, :placeholder => "First Name"%>
 		  <%= f.input :last, :placeholder => "Last Name" %>
 		  <%= f.input :email, :placeholder => "Email Address" %>
