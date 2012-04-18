@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default to: EMAIL['destdigi']['address']
+  default to: email_address
   
   def send_contest_mail(user)
     @user = user
