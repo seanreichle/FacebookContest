@@ -26,11 +26,11 @@ group :assgets do
 end
 
 gem 'jquery-rails'
-gem 'carrierwave'
-gem 'rmagick'
+# gem 'carrierwave'
+# gem 'rmagick'
 gem 'simple_form'
-gem "fog", "~> 1.3.1"
-
+# gem "fog", "~> 1.3.1"
+gem 'email_validator'
 
 gem 'heroku'
 

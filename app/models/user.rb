@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
-  attr_accessible :comment, :email, :first, :image_id, :last, :zip_code
-  
-  validates_presence_of :first, :last, :email, :zip_code, :comment
+  attr_accessible :comment, :email, :first, :last, :zip_code
+
+  validates :first, :presence => true
+  validates :last, :presence => true
+  validates :email, :presence => true, :uniqueness => true, :email => true
+  validates :zip_code, :presence => true
+  validates :comment, :presence => true
 end

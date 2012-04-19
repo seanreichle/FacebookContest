@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  
+
   def index
-    render action: "new"
+    @users = User.all
   end
 
   def new
@@ -22,7 +22,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
-  def list
-    @user = User.all
+private
+  def rediect
+    redirect_to "/users/new"
   end
 end
