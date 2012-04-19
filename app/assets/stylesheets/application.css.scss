@@ -34,66 +34,93 @@ body {
 	text-align: left;
 	width: 330px;
 	position:relative;
-	left: 480px;
-	top: -375px;
+	left: 460px;
+	top: -345px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;	
 }
 
 #description {
-	font-family: lato, helvetica, sans-serif:
+	font-family: lato, helvetica, sans-serif;
 	height: 300px;
-	width: 350px;
+	width: 400px;
 	padding: 20px;
-	padding-top: 300px; 	
+	padding-top: 290px; 
+	p {
+		padding:0 0 5px;
+		margin:0;
+	}	
 }
-
+label {display:none;}
 input {
 	height: 35px;
-	width: 300px;
+	width: 280px;
 	margin: 3px;
+	padding:2px 8px;
+	font-size:15px;
 	font-family: lato, helvetica, sans-serif;
 	color: #797575;
+	border:none;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	outline: none;
+}
+input.placeholder {
+	font-size:11px;
 }
 
 textarea {
 	height: 100px;
-	width: 300px;
-	margin: 5px;
+	width: 280px;
+	margin: 3px;
+	padding:2px 8px;
+	border:none;
 	font-family: lato, helvetica, sans-serif;
+	font-size:15px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	outline: none;
 }
 
 #button {
 	margin-left: 110px;
 	width: 100px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
-#submit-button {
-	height: 25px;
-	width: 60px;
+.btn {
+	width: 100px;
 	color: #ae2c01;
-	margin-top: -10px;
-	padding: 0;
-	text-align: center;
+	margin:0 0 0 100px;
+	color:#ddd !important;
+	
 }
 
-label {
-	font-size: .7em;
-	padding-left: 120px;
+.input.field_with_errors,{
+	position:relative;
+	input, textarea{
+		border:1px solid #f00;
+		background:#fdf1f4}
+	span.error {
+		position: absolute;
+		right: 40px;
+		top: 10px;
+		text-align: right;
+		color:#f00;
+	}
 }
 
 a {
 	text-decoration: none;
-	color: #fdad02;
+	color: #9e2301;
 }
 
 a:hover {
-	color: #024ffd;
+	color: #701a02;
 }
+@import "buttons";
