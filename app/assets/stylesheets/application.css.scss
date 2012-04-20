@@ -1,3 +1,4 @@
+@import "mixins2";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -122,5 +123,14 @@ a {
 
 a:hover {
 	color: #701a02;
+}
+h3 {color:#111;font-weight:bold;}
+.photo {
+	padding:5px;
+	background:#FFF url() 0 0 no-repeat;
+	@include rounded(2px);
+	@include shadow();
+	float:left;
+	img {float:left;}
 }
 @import "buttons";

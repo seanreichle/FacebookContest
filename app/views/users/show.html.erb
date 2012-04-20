@@ -2,6 +2,11 @@
 	<div id="description">
     <%= render "text" %>
 	<div id="form">
-		<h3>Thanks for entering GOOD LUCK.</h3> 
+		<h3>Thanks for entering GOOD LUCK.</h3>
+    <% if @user.image.present? %>
+      <div class="photo">
+        <%= image_tag @user.image.thumb.url, :class => "border"%> 
+      </div>
+    <% end %>
 	</div>
 </div>
