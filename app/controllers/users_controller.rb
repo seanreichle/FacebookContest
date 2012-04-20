@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  
+
   def index
-    @user = User.all
+    @users = User.all
   end
 
   def new
@@ -10,7 +10,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if @project.save
+    if @user.save
+      UserMailer.send_contest_mail(@user).deliver
       redirect_to @user, notice: 'User was successfully created.' 
     else
       render action: "new"
@@ -18,9 +19,11 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
   end
   
-  def list
-    @user = User.all
+private
+  def rediect
+    redirect_to "/users/new"
   end
 end
