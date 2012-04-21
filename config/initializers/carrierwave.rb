@@ -4,6 +4,9 @@ end
 def s3_secret
   ENV['S3SEC'] ||= AWS[Rails.env]['S3SEC']
 end
+def s3_bucket
+  ENV['S3BUCKET'] ||= AWS[Rails.env]['bucket']
+end
 
 CarrierWave.configure do |config|
   config.root = Rails.root.join('tmp') # adding these...
@@ -15,7 +18,7 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => s3_secret      # required
     # :region                 => 'us-west-1'  # optional, defaults to 'us-east-1'
   }
-  config.fog_directory  = AWS[Rails.env]['bucket']                     # required
+  config.fog_directory  = s3_bucket                     # required
   config.cache_dir = "#{Rails.root}/public/uploads"
   # config.fog_host       = 'https://assets.example.com'            # optional, defaults to nil
   # config.fog_public     = false                                   # optional, defaults to true
