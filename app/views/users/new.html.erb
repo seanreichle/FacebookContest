@@ -1,6 +1,7 @@
 <div class="wrapper">
 	<div id="description">
-  <%= render "text" %>  
+  <%= render "text" %> 
+  </div>
 	<div id="form">
 		<%= simple_form_for @user, :remote => true do |f| %>
 		  <%= f.input :first, :placeholder => "First Name"%>
@@ -8,7 +9,8 @@
 		  <%= f.input :email, :placeholder => "Email Address" %>
 		  <%= f.input :zip_code, :placeholder => "Your Zip Code" %>
 		  <%= f.input :comment, :placeholder => "Comment" %>
-		  <%= f.input :image %>
+		  <%= f.input :image, :input_html => { :class => "file dave" } %>
+		  <%= f.input :image_cache, :input_html => { :class => "hide" } %>
 		  <%= f.button :submit, 'SEND!', :class => "button positive" %>
 		<% end %>     
 	</div>

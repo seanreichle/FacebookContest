@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :comment, :email, :first, :last, :zip_code, :image
+  attr_accessible :comment, :email, :first, :last, :zip_code, :image, :image_cache
 
   validates :first, :presence => true
   validates :last, :presence => true
@@ -8,4 +8,5 @@ class User < ActiveRecord::Base
   validates :comment, :presence => true
   
   mount_uploader :image, UsersImageUploader
+  
 end

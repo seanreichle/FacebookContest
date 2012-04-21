@@ -29,17 +29,20 @@ body {
 
 
 #form {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #000000;
+	float: left;
+	font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
 	font-size: 13px;
-	color: #000;
+	padding: 150px 0 0 40px;
+	position: relative;
 	text-align: left;
-	width: 330px;
-	position:relative;
-	left: 460px;
-	top: -345px;
-	border-radius: 10px;
+	width: 300px;
 	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;	
+	-webkit-border-radius: 10px;
+	p {
+		color:#444;
+		font-size:11px;
+	}	
 }
 
 #description {
@@ -47,7 +50,8 @@ body {
 	height: 300px;
 	width: 400px;
 	padding: 20px;
-	padding-top: 290px; 
+	padding-top: 290px;
+	float:left; 
 	p {
 		padding:0 0 5px;
 		margin:0;
@@ -71,7 +75,6 @@ input {
 input.placeholder {
 	font-size:11px;
 }
-
 textarea {
 	height: 100px;
 	width: 280px;
@@ -133,4 +136,6 @@ h3 {color:#111;font-weight:bold;}
 	float:left;
 	img {float:left;}
 }
+.hide {display:none;}
 @import "buttons";
+@import "spaces";
