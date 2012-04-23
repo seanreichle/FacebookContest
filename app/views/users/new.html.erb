@@ -1,17 +1,21 @@
-<div class="wrapper">
-	<div id="description">
-  <%= render "text" %> 
+<div id="bg-wrapper">
+  <div class="wrapper">
+  	<div id="description">
+    <%= render "text" %> 
+    </div>
+  	<div id="form">
+  		<%= simple_form_for @user, :remote => true do |f| %>
+  		  <%= f.input :first, :label => "First Name"%>
+  		  <%= f.input :last, :label => "Last Name" %>
+  		  <%= f.input :email, :label => "Email Address" %>
+  		  <%= f.input :zip_code, :label => "Your Zip Code" %>
+  		  <%= f.input :comment, :label => "Comment" %>
+  		  <%= f.input :image, :label => "Upload Image", :input_html => { :class => "file" } %>
+  		  <%= f.input :image_cache, :input_html => { :class => "hide" }, :label_html => {:class => "hide"} %>
+  		  <%= f.button :submit, 'SEND!', :class => "button positive" %>
+  		<% end %>     
+  	</div>
+    <div class="bot"></div>
   </div>
-	<div id="form">
-		<%= simple_form_for @user, :remote => true do |f| %>
-		  <%= f.input :first, :placeholder => "First Name"%>
-		  <%= f.input :last, :placeholder => "Last Name" %>
-		  <%= f.input :email, :placeholder => "Email Address" %>
-		  <%= f.input :zip_code, :placeholder => "Your Zip Code" %>
-		  <%= f.input :comment, :placeholder => "Comment" %>
-		  <%= f.input :image, :input_html => { :class => "file dave" } %>
-		  <%= f.input :image_cache, :input_html => { :class => "hide" } %>
-		  <%= f.button :submit, 'SEND!', :class => "button positive" %>
-		<% end %>     
-	</div>
 </div>
+
