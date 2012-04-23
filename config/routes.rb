@@ -1,6 +1,6 @@
 FacebookContentest::Application.routes.draw do
   
-  resources :users
+  resources :users, :only => [:new, :show, :create]
   
   # match 'users/new' => 'users#new'
   # 
