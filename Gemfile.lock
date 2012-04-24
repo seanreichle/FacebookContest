@@ -167,7 +167,6 @@ DEPENDENCIES
   rmagick
   sass-rails (~> 3.2.3)
   simple_form
-  sqlite3
   taps
   uglifier (>= 1.0.3)
   zurb-foundation
