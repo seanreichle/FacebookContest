@@ -16,4 +16,8 @@
 /public/uploads/*.*
 .sass-cache
 
+/config/email_config.yml
+/config/database.yml
+/config/s3.yml
+
 application.css.scssc
