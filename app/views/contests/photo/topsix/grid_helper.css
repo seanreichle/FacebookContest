@@ -1,0 +1,77 @@
+.inpad {
+  padding: 0 1.9%; }
+
+.inpad.four {
+  width: 26.95%; }
+
+.inpad.five {
+  width: 35.65%; }
+
+.inpad.six {
+  width: 44.2%; }
+
+.inpad.seven {
+  width: 52.95%; }
+
+.relative {
+  position: relative; }
+
+.marg-top {
+  margin-top: 20px !important; }
+
+.marg-top-half {
+  margin-top: 10px !important; }
+
+.marg-bot {
+  margin-bottom: 20px !important; }
+
+.marg-bot-half {
+  margin-bottom: 10px !important; }
+
+.pad-top-big {
+  padding-top: 50px !important; }
+
+.pad-top {
+  padding-top: 20px !important; }
+
+.pad-top-half {
+  padding-top: 10px !important; }
+
+.pad-bot-big {
+  padding-bottom: 50px !important; }
+
+.pad-bot {
+  padding-bottom: 20px !important; }
+
+.pad-bot-half {
+  padding-bottom: 10px !important; }
+
+.pad-left {
+  padding-left: 3.8% !important; }
+
+.pad-right {
+  padding-right: 3.8% !important; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+.hide-now {
+  display: none; }
+
+.hidden {
+  visibility: hidden; }
