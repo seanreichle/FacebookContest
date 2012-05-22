@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://deststudios.com/client/nwv/fb/contests/photo/template.css">
-
-	
-	<title>Your Vision in HD</title>
-</head>
-<body>
+<div id="bg-wrapper">
 	<div class="wrapper">
 		<div class="header">
 			<div class="header-description">
@@ -16,47 +6,31 @@
 			</div>
 		</div>
 		<div class="content">
+			<%= render "text" %> 
 			<h1 align="center">Your Vision in <strong>HD</strong></h1>
-			<form class="nice">
-				<input type="text" placeholder="First Name, Last Name" class="input-text"><br>
-				<input type="text" placeholder="Email Address" class="input-text"><br>
-				<input type="text" placeholder="City" class="input-text"><br>
-				<input type="text" placeholder="Zip Code" class="input-text"><br>
-				<textarea type="essay" value="Tell us about yourself" row="200" col="10" class="input-text" id="tellus"></textarea><br>
-				<input type="submit" value="Upload"  class="input-text" id="upload">
-				<input type="submit" value="Enter"  class="input-text" id="button">
+			  <div id="form">
+			  		<%= simple_form_for @user, :class => "nice", :remote => true do |f| %>
+			  		  <%= f.input :first, :label => "First Name, Last Name", :placeholder => "First Name, Last Name" %>
+			  		  <%= f.input :email, :label => "Email Address", :placeholder => "Email Address" %>
+			  		  <%= f.input :zip_code, :label => "Zip Code", :placeholder => 'Zip Code', :class => 'input-text' %>
+			  		  <%= f.input :comment, :label => "Tell us about yourself", :placeholder=>'Tell us about yourself', :rows=>200, :col=>10, :id=>'tellus' :class => "input-text" %>
+			  		  <%= f.input :image, :label => "Upload", :id=>"upload", :class=>"input-text" :input_html => { :class => "file" } %>
+			  		  <%= f.input :image_cache, :input_html => { :class => "hide" }, :label_html => {:class => "hide"} %>
+			  		  <%= f.button :submit, 'Enter', :class => "input-text", :id => "button" %>
+			  		<% end %>     
+			  	</div>
+				<!--><input type="text" placeholder="City" class="input-text"><br> -->
 			</form>
 			<p id="description">Don’t you wish you could capture all of life’s “wow” moments in HD? You’d remember every smile, freckle and mountaintop for life! We’re putting you to the test, and asking you to send us your very own photo that best depicts a great life moment. Your photo will be voted online, and the top six entries will move on to a final round of voting. The individual whose photo has the most votes wins a 50” flat screen TV!</p>
 			<h3 align="center"><i>Heres how it works:</i></h3>
 			<p align="center">Upload the winning photo and tell us why above!</p>
 			<p align="center">Then the rest is you, hit the cyber space and tell your friends to vote for your photo. The votes will tell the story and you'll be well on your way to a brand new <strong>flatscreen!</strong></p>
 			<h2 align="center"><i>Now GO!</i></h2>
+			
+			<div class="bot"></div>
 		</div>
 		<div class="footer">
 			<p id="footer-description" align="center">1-800-Eye-Care (393-2273)		|		www.nationwidevision.com</p>
 		</div>
 	</div>
-</body>
-=======
-<div id="bg-wrapper">
-  <div class="wrapper">
-  	<div id="description">
-    <%= render "text" %> 
-    </div>
-  	<div id="form">
-  		<%= simple_form_for @user, :remote => true do |f| %>
-  		  <%= f.input :first, :label => "First Name"%>
-  		  <%= f.input :last, :label => "Last Name" %>
-  		  <%= f.input :email, :label => "Email Address" %>
-  		  <%= f.input :zip_code, :label => "Your Zip Code" %>
-  		  <%= f.input :comment, :label => "Comment" %>
-  		  <%= f.input :image, :label => "Upload Image", :input_html => { :class => "file" } %>
-  		  <%= f.input :image_cache, :input_html => { :class => "hide" }, :label_html => {:class => "hide"} %>
-  		  <%= f.button :submit, 'SEND!', :class => "button positive" %>
-  		<% end %>     
-  	</div>
-    <div class="bot"></div>
-  </div>
 </div>
-
->>>>>>> 819b65824f9a2f5f3e2c30038dd9394a15469d52
