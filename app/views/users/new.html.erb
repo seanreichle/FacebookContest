@@ -2,31 +2,25 @@
 	<div class="wrapper">
 		<div class="header">
 			<div class="header-description">
-				<img src="http://deststudios.com/client/nwv/fb/contests/photo/nvc_logo.png" alt="Enter To Win" id="logo"/>
+				<%= image_tag("v2/nvc_logo.png", :alt=>"Enter To Win", :id=>"logo" ) %>
 			</div>
 		</div>
 		<div class="content">
-			<%= render "text" %> 
 			<h1 align="center">Your Vision in <strong>HD</strong></h1>
-			  <div id="form">
-			  		<%= simple_form_for @user, :class => "nice", :remote => true do |f| %>
-			  		  <%= f.input :first, :label => "First Name, Last Name", :placeholder => "First Name, Last Name" %>
-			  		  <%= f.input :email, :label => "Email Address", :placeholder => "Email Address" %>
-			  		  <%= f.input :zip_code, :label => "Zip Code", :placeholder => 'Zip Code', :class => 'input-text' %>
-			  		  <%= f.input :comment, :label => "Tell us about yourself", :placeholder=>'Tell us about yourself', :rows=>200, :col=>10, :id=>'tellus' :class => "input-text" %>
-			  		  <%= f.input :image, :label => "Upload", :id=>"upload", :class=>"input-text" :input_html => { :class => "file" } %>
-			  		  <%= f.input :image_cache, :input_html => { :class => "hide" }, :label_html => {:class => "hide"} %>
-			  		  <%= f.button :submit, 'Enter', :class => "input-text", :id => "button" %>
-			  		<% end %>     
-			  	</div>
-				<!--><input type="text" placeholder="City" class="input-text"><br> -->
-			</form>
+	  		<%= simple_form_for @user, :class => "nice", :remote => true do |f| %>
+	  		  <%= f.input :first, :label=>"First Name, Last Name", :placeholder => "First Name, Last Name", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :email, :label => "Email Address", :placeholder => "Email Address", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :zip_code, :label => "Zip Code", :placeholder => 'Zip Code', :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :comment, :label => "Tell us about yourself", :placeholder=>'Tell us about yourself', :input_html => { :class => "input-text tellus" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :image, :label => "Upload", :id=>"upload", :input_html => { :class => "file" }, :class=>"input-text", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :image_cache, :input_html => { :class => "hide"}, :label_html => {:class => "hide"} %>
+	  		  <%= f.button :submit, :value=>'Enter', :id => "button", :class => "input-text"  %>
+	  		<% end %>  
 			<p id="description">Don’t you wish you could capture all of life’s “wow” moments in HD? You’d remember every smile, freckle and mountaintop for life! We’re putting you to the test, and asking you to send us your very own photo that best depicts a great life moment. Your photo will be voted online, and the top six entries will move on to a final round of voting. The individual whose photo has the most votes wins a 50” flat screen TV!</p>
 			<h3 align="center"><i>Heres how it works:</i></h3>
 			<p align="center">Upload the winning photo and tell us why above!</p>
 			<p align="center">Then the rest is you, hit the cyber space and tell your friends to vote for your photo. The votes will tell the story and you'll be well on your way to a brand new <strong>flatscreen!</strong></p>
 			<h2 align="center"><i>Now GO!</i></h2>
-			
 			<div class="bot"></div>
 		</div>
 		<div class="footer">

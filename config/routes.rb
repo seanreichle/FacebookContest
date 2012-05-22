@@ -1,6 +1,6 @@
 FacebookContentest::Application.routes.draw do
   
-  resources :users, :only => [:new, :show, :create]
+  resources :users, :only => [:new, :show, :create, :topsix]
   
   # match 'users/new' => 'users#new'
   # 
@@ -57,7 +57,6 @@ FacebookContentest::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'users#new'
   match '/topsix', :to => 'users#topsix'
-  match '/v1', :to => 'users#v1'
 
   # See how all your routes lay out with "rake routes"
 

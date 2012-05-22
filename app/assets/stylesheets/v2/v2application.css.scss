@@ -64,8 +64,9 @@ form {
   height: 450px;
 }
 
-#tellus {
+textarea.tellus {
   height: 100px;
+  padding: 5px 2px 0px 2px;  
 }
 
 .input-text {
@@ -77,6 +78,7 @@ form {
   height: 25px;
   margin: 4px;
   outline: 0px;
+  padding: 2px 2px 0px 2px;
   -webkit-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
   -moz-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
   -o-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
@@ -164,7 +166,7 @@ h2 {
   text-shadow: 1px 1px 7px #333;
 
 }
-
+.hide {display:none;}
 
 
 

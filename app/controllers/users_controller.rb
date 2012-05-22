@@ -21,11 +21,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
   end
-  
-  def v1
-    #get and return top six users
-    @user = User.new
-  end
    
   def topsix
     #get and return top six users
