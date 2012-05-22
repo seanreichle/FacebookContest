@@ -34,12 +34,8 @@ gem "fog", "~> 1.3.1"
 gem 'email_validator'
 
 gem 'heroku'
-<<<<<<< HEAD
 gem 'thumbs_up'
-=======
 gem 'taps'
->>>>>>> 819b65824f9a2f5f3e2c30038dd9394a15469d52
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
