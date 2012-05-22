@@ -1,4 +1,17 @@
-body {
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+*/
+
+ body {
   width: 810px;
   margin: 0 auto;
   font-family: lato, sans-serif, helvetica;
@@ -64,11 +77,11 @@ form {
   height: 25px;
   margin: 4px;
   outline: 0px;
-  -webkit-box-shadow: inset    -5px rgba(51, 51, 51, 7),  2px 2px 2px #333333;
-  -moz-box-shadow: inset    -5px rgba(51, 51, 51, 7),  2px 2px 2px #333333;
-  -o-box-shadow: inset    -5px rgba(51, 51, 51, 7),  2px 2px 2px #333333;
-  -ms-box-shadow: inset    -5px rgba(51, 51, 51, 7),  2px 2px 2px #333333;
-  box-shadow: inset    -5px rgba(51, 51, 51, 7),  2px 2px 2px #333333;
+  -webkit-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
+  -moz-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
+  -o-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
+  -ms-box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
+  box-shadow: inset    -5px rgba(51, 51, 51, 0.7),  2px 2px 2px #333333;
 }
 
 #button {
@@ -85,7 +98,7 @@ form {
   border-radius: 5px;
   -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
   -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
-  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  box-shadow: inset 0px 0px 0px 1px (255, 115, 100, 0.4), 0 1px 3px #333333;
   color: white;
   width: 80px;
   height: 30px;
@@ -117,11 +130,11 @@ form {
   background: #aa2b01;
   height: 50px;
   border-top: #fdfeff solid 5px;
-  -webkit-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 2);
-  -moz-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 2);
-  -o-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 2);
-  -ms-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 2);
-  box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 2);
+  -webkit-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 0.2);
+  -moz-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 0.2);
+  -o-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 0.2);
+  -ms-box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 0.2);
+  box-shadow:0px -5px 16px -5px rgba(150, 150, 150, 0.2);
 }
 
 #footer-description {

@@ -22,10 +22,16 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
+  def v1
+    #get and return top six users
+    @user = User.new
+  end
+   
   def topsix
     #get and return top six users
     @user = User.all
   end
+  
   
 private
   def rediect
