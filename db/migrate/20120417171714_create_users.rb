@@ -6,7 +6,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.text :comment
       t.integer :image_id
-
       t.timestamps
     end
   end

@@ -34,6 +34,7 @@ gem "fog", "~> 1.3.1"
 gem 'email_validator'
 
 gem 'heroku'
+gem 'thumbs_up'
 
 
 # To use ActiveModel has_secure_password
