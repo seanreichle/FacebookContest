@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="wrapper">
 	<div class="header">
 		<div class="header-description">
@@ -26,4 +27,26 @@
 	<div class="footer">
 		<p id="footer-description" align="center">1-800-Eye-Care (393-2273)		|		www.nationwidevision.com</p>
 	</div>
+=======
+<div id="bg-wrapper">
+  <div class="wrapper">
+  	<div id="description">
+    <%= render "text" %> 
+    </div>
+  	<div id="form">
+  		<%= simple_form_for @user, :remote => true do |f| %>
+  		  <%= f.input :first, :label => "First Name"%>
+  		  <%= f.input :last, :label => "Last Name" %>
+  		  <%= f.input :email, :label => "Email Address" %>
+  		  <%= f.input :zip_code, :label => "Your Zip Code" %>
+  		  <%= f.input :comment, :label => "Comment" %>
+  		  <%= f.input :image, :label => "Upload Image", :input_html => { :class => "file" } %>
+  		  <%= f.input :image_cache, :input_html => { :class => "hide" }, :label_html => {:class => "hide"} %>
+  		  <%= f.button :submit, 'SEND!', :class => "button positive" %>
+  		<% end %>     
+  	</div>
+    <div class="bot"></div>
+  </div>
+>>>>>>> 819b65824f9a2f5f3e2c30038dd9394a15469d52
 </div>
+

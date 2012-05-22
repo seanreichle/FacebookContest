@@ -5,9 +5,9 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
-  gem 'sqlite3'
-end
+# group :development do
+#   gem 'sqlite3'
+# end
 
 group :production do
    gem 'sqlite3'
@@ -34,7 +34,11 @@ gem "fog", "~> 1.3.1"
 gem 'email_validator'
 
 gem 'heroku'
+<<<<<<< HEAD
 gem 'thumbs_up'
+=======
+gem 'taps'
+>>>>>>> 819b65824f9a2f5f3e2c30038dd9394a15469d52
 
 
 # To use ActiveModel has_secure_password
