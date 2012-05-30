@@ -1,14 +1,14 @@
 <div class="wrapper">
 	<div id="description">
-    <%= render "text" %>
-  </div>
+     <%= render "text" %>
+    </div>
 	<div id="form">
 		<h3>Thanks for entering GOOD LUCK.</h3>
-    <% if @user.image.present? %>
-      <div class="photo">
-        <%= link_to image_tag(@user.image.thumb.url),  @user.image.url %> 
-      </div>
-      <p class="mts">Thank you for uploading an image.</p>
-    <% end %>
+	    <% if @user.image.present? %>
+	      <div class="photo">
+	        <%= link_to image_tag(@user.image.thumb.url),  @user.image.url %> 
+	      </div>
+	      <p class="mts">Thank you for uploading an image.</p>
+	    <% end %>
 	</div>
 </div>
