@@ -8,7 +8,7 @@
 		<div class="content">
 			<h1 align="center">Your Vision in <strong>HD</strong></h1>
 	  		<%= simple_form_for @user, :class => "nice", :remote => true do |f| %>
-	  		  <%= f.input :first, :label=>"First Name, Last Name", :placeholder => "First Name, Last Name", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
+	  		  <%= f.input :first, :label=>"Full Name", :placeholder => "Full Name", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
 	  		  <%= f.input :email, :label => "Email Address", :placeholder => "Email Address", :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
 	  		  <%= f.input :zip_code, :label => "Zip Code", :placeholder => 'Zip Code', :input_html => { :class => "input-text" }, :label_html => {:class => "hide input-text"} %>
 	  		  <%= f.input :comment, :label => "Tell us about yourself", :placeholder=>'Tell us about yourself', :input_html => { :class => "input-text tellus" }, :label_html => {:class => "hide input-text"} %>

@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>First</th>
-    <th>Last</th>
+    <th>Name</th>
     <th>Email</th>
+    <th>Zip Code</th>
     <th>Comment</th>
     <th>image_id</th>
     <th>image</th>
@@ -13,8 +13,8 @@
 <% @user.each do |user| %>
   <tr>
     <td><%= user.first %></td>
-    <td><%= user.last %></td>
     <td><%= user.email %></td>
+    <td><%= user.zip_code %></td>
     <td><%= user.comment %></td>
     <td><%= user.image_id %></td>
     <td><%= user.image %></td>
