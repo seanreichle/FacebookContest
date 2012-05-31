@@ -1,11 +1,7 @@
 nwv_email:
   address: nwv@nationwidevision.com
   password: password
-
-destdigi:
-  address: sean.crown@gmail.com
-  password: FHS294R
   
-#destdigi:
-#  address: destdigi@gmail.com
-#  password: Summer23
+destdigi:
+  address: destdigi@gmail.com
+  password: Summer23
