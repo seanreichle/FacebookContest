@@ -10,7 +10,7 @@
  *
  *= require_self
 */
-@include "_mixins"
+@import "mixins"
 
  body {
   font-family: lato, sans-serif, helvetica;
