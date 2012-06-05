@@ -14,12 +14,7 @@
 
 body {
   font-family: lato, sans-serif, helvetica;
-  background: rgb(238, 231, 210);
-  background: -moz-linear-gradient(272deg, rgb(238, 231, 210) 0%, rgb(255, 255, 170) 70%);
-  background: -webkit-linear-gradient(272deg, rgb(238, 231, 210) 0%, rgb(255, 255, 170) 70%);
-  background: -o-linear-gradient(272deg, rgb(238, 231, 210) 0%, rgb(255, 255, 170) 70%);
-  background: -ms-linear-gradient(272deg, rgb(238, 231, 210) 0%, rgb(255, 255, 170) 70%);
-  background: linear-gradient(272deg, rgb(238, 231, 210) 0%, rgb(255, 255, 170) 70%);
+  background: #ece9d8;
   margin: 0;
 }
 
@@ -40,7 +35,6 @@ body {
 }
 
 .photo {
-  background: #FFF;
   border-radius: 3px;
   padding: 5px;
 }
